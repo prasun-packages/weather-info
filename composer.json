@@ -1,0 +1,18 @@
+{
+    "name": "prasun-packages/weather-info",
+    "description": "It provides the latest weather information for any city or geographic location in the world.",
+    "autoload": {
+        "psr-4": {
+            "PrasunPackages\\WeatherInfo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Prasun Das",
+            "email": "prasun.das@learningmate.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+}
