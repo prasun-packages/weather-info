@@ -7,7 +7,8 @@ use PrasunPackages\WeatherInfo\WeatherInfo;
 
 class WeatherInfoController {
 
-    public function __invoke(WeatherInfo $weatherInfo, Request $request) {
+    public function __invoke(WeatherInfo $weatherInfo, Request $request)
+    {
         $city = $request->has('city') ? $request->input('city') : '';
 
         $response = [];

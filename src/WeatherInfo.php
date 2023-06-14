@@ -8,7 +8,6 @@ class WeatherInfo {
 
     public function index($city = '')
     {
-        dump(config('weatherinfo'));
         return Http::withHeaders([
                     'X-Api-Key' => config('weatherinfo.ninjas.apikey')
                 ])->get('https://api.api-ninjas.com/v1/weather', [
