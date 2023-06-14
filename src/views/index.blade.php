@@ -27,7 +27,7 @@
                     @if(isset($temp))
                     <div class="row p-3">
                         <div class="col">
-                            <h3 class="text-center">Temperature: {{ $temp }}&deg;C</h3>
+                            <h3 class="text-center text-success">Today {{ $city }}'s temperature is {{ $temp }}&deg;C</h3>
                         </div>
                     </div>
                     @endif

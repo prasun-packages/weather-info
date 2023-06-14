@@ -11,12 +11,12 @@ class WeatherInfoController {
         $city = $request->has('city') ? $request->input('city') : '';
 
         $response = [];
-        if(!empty($city)){
+        if (!empty($city)) {
             $response = $weatherInfo->index($city);
             $response = json_decode($response, true);
-            //dump($response);
+            $response['city'] = ucwords($city);
         }
-        
+
         return view('weather-info::index', $response);
     }
 
